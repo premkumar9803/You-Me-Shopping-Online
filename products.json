@@ -1,0 +1,16 @@
+{
+  "script": [
+    {
+      "id": 1,
+      "name": "Women T-shirts"
+    },
+    {
+      "id": 2,
+      "name": "Women Tops And Tunics"
+    },
+    {
+      "id": 3,
+      "name": "Bangles & Bracelets"
+    }
+  ]
+}
