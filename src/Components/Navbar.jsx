@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import banner from "../assets/Banner/banner-2.png";
 import Banner from '../assets/Banner/Banner.png'
 import cod1 from "../assets/Banner/return.png";
 import cod2 from "../assets/Banner/cash-on-delivery.png";
@@ -134,7 +133,7 @@ function Navbar() {
 
       {/* COD SECTION */}
       <div className=" border-[#FCECF9] shadow-sm mt-5 rounded-lg">
-        <div className="flex justify-center p-3 gap-2 text-gray-900 font-medium text-xs md:text-lg md:gap-20">
+        <div className="flex justify-center gap-2 text-gray-900 font-medium text-xs md:text-lg md:gap-20">
 
             <div className="flex items-center gap-1 md:gap-3">
                 <img src={cod1} className="w-4 md:w-7" />

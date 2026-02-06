@@ -1,9 +1,16 @@
 .para{
     color: rgb(148, 13, 116);
+    font-size: 10px;
 }
 .span{
     font-family: "Mier book";
     font-weight: 500;
     font-style: normal;
     color: rgb(97, 97, 115);
+}
+@media (min-width:1025px) {
+    .para{
+        color: rgb(148, 13, 116);
+        font-size: 18px;
+    }
 }

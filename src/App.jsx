@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Logo from '/Meesho_logo.png'
 import Header from './Components/Header'
 import Navbar from './Components/Navbar'
 import Photo from './Components/Photo'

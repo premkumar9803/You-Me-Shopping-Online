@@ -101,13 +101,13 @@ function Products() {
             </div>
 
             {/* ------------------------ Photo Section---------------------- */}
-            <div className=' flex gap-1 absolute -top-5 right-0.5 md:top-14 md:right-32 md:gap-4 cursor-pointer'>
+            <div className=' flex gap-2 absolute -top-5 right-5 md:top-14 md:right-32 md:gap-4 cursor-pointer'>
                 {/* Photos 1 */}
                 <div className=' flex flex-col items-center gap-1.5 md:gap-3 transition-transform duration-300 
                 hover:scale-y-105 hover:scale-100'>
                     <img src={image1} alt="" className=' w-16 md:w-36'/>
-                    <p className='para text-xs px-1 py-0.5 font-medium bg-white rounded-md
-                     md:text-xl md:px-4 md:py-1.5 md:rounded-xl md:font-bold'>
+                    <p className='para px-1 py-0.5 font-medium bg-white rounded-md
+                    md:px-4 md:py-1.5 md:rounded-xl md:font-bold'>
                         Trending Now
                     </p>
                 </div>
@@ -115,8 +115,8 @@ function Products() {
                 <div className=' flex flex-col items-center gap-1.5 md:gap-3 transition-transform duration-300 
                 hover:scale-y-105 hover:scale-100'>
                     <img src={image2} alt="" className=' w-16 md:w-36' />
-                    <p className='para text-xs px-1 py-0.5 font-medium bg-white rounded-md
-                     md:text-xl md:px-6 md:py-1.5 md:rounded-xl md:font-bold'>
+                    <p className='para px-1 py-0.5 font-medium bg-white rounded-md
+                     md:px-6 md:py-1.5 md:rounded-xl md:font-bold'>
                         Budget Buys
                     </p>
                 </div>
@@ -124,8 +124,8 @@ function Products() {
                 <div className=' flex flex-col items-center gap-1.5 md:gap-3 transition-transform duration-300 
                 hover:scale-y-105 hover:scale-100'>
                     <img src={image4} alt="" className=' w-16 md:w-36' />
-                    <p className='para text-xs px-1 py-0.5 font-medium bg-white rounded-md
-                     md:text-xl md:px-3 md:py-1.5 md:rounded-xl md:font-bold'>
+                    <p className='para px-1 py-0.5 font-medium bg-white rounded-md
+                     md:px-3 md:py-1.5 md:rounded-xl md:font-bold'>
                         Daily Essentials
                     </p>
                 </div>
@@ -133,8 +133,8 @@ function Products() {
                 <div className=' hidden md:flex flex-col items-center gap-1.5 md:gap-3 transition-transform duration-300 
                 hover:scale-y-105 hover:scale-100'>
                     <img src={image3} alt="" className='md:w-36' />
-                    <p className='para text-xs px-1 py-0.5 font-medium bg-white rounded-md
-                     md:text-xl md:px-3 md:py-1.5 md:rounded-xl md:font-bold'>
+                    <p className='para px-1 py-0.5 font-medium bg-white rounded-md
+                     md:px-3 md:py-1.5 md:rounded-xl md:font-bold'>
                         Top Rated Picks
                     </p>
                 </div>

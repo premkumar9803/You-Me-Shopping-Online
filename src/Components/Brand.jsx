@@ -9,11 +9,11 @@ import brand6 from '../assets/Brand/Smart_Phone.webp'
 function Brand() {
   return (
     <div>
-        <h1 className=' p-10 text-lg md:text-4xl md:px-20 '>Original Brand
+        <h1 className=' p-6 text-2xl mt-5 md:text-4xl md:px-20 '>Original Brand
             <i className="fa-solid fa-circle-check fa"></i>
         </h1>
         
-        <div className=' grid grid-cols-2 gap-10 w-60 ml-20 md:ml-32 md:flex md:gap-8 md:w-40 md:mt-6'>
+        <div className=' grid grid-cols-2 gap-10 w-60 ml-16 md:ml-32 md:flex md:gap-8 md:w-40 md:mt-6'>
             <img src={brand1} alt="" />
             <img src={brand2} alt=""/>
             <img src={brand3} alt="" />

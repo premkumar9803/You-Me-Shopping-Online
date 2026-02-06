@@ -48,7 +48,7 @@ const products = [
     title: "Charvi Superior Kurtis",
     price: 244,
     rating: 3.9,
-    reviews: "56,906 Reviews",
+    reviews: "56906 Reviews",
   },
   {
     id: 2,

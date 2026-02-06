@@ -11,11 +11,8 @@ function Footer() {
   return (
     <footer className=" bg-[#F8F8FF] py-5 ">
       <div className=" max-w-full mx-auto px-5 md:pt-10 md:ml-36">
-
-        
+    
         <div className=" md:grid grid-cols-[1fr_1fr_1fr] md:gap-10">
-          
-
           {/* Brand */}
           <div>
             <h1 className="text-gray-800 text-4xl font-semibold md:text-5xl">
