@@ -12,12 +12,12 @@ import { ChevronDown, ChevronUp} from  "lucide-react"
 
 function Products() {
 
-{/* ---------------------- Sort by : Relevance Section-------------------------- */}
+// ---------------------- Sort by : Relevance Section--------------------------
     const [sortOpen, setsortOpen] = useState(false); // Open/Close
     const [selectedSort, setSelectedSort] = useState("Relevance");
     const sorts = ["Relevance", "New Arrivals", "Price (High to Low)", "Price (Low to High)", "Ratings", "Discount"]; //Sort by :Relevance
 
-{/* ---------------------------- Category Section--------------------------------- */}
+// ---------------------------- Category Section---------------------------------
     const [categoriesOpen, setCategoriesOpen] = useState(false);  // Open/Close
     const [search, setSearch] = useState(""); // Search-button   
     const [selectedCategories, setSelectedCategories] = useState([]) // Checkbox value
@@ -43,15 +43,15 @@ function Products() {
         }
     };
 
-{/* ------------------------------- Gender Section------------------------ */}    
+// ------------------------------- Gender Section------------------------  
     const [genderOpen, setGenderOpen] = useState(false); // Open/Close
     const genders = ["Boys", "Girls", "Men", "Women"];  // list
 
-{/* -----------------------------  - Color Section-------------------------- */}
+// -----------------------------  - Color Section--------------------------
     const [colorOpen, setColorOpen] = useState(false); // Open/Close
     const colors =["Black", "Brown", "Gold", "Grey" ,"Light Pink", "Marron"]; // list
 
-{/* ---------------------------------Size Section----------------------------- */}    
+// ---------------------------------Size Section-----------------------------    
     const [sizeOpen, setSizeOpen] =useState(false); // Open/Close
     const [sizeSearch, setSizeSearch] =useState(""); // Search-Button
     const [selectedSizes, setSelectedSizes] =useState([]); // Checkbox
@@ -68,16 +68,16 @@ function Products() {
         }
     }
 
-{/* --------------------------------- Price Section---------------------------------*/}    
+// --------------------------------- Price Section---------------------------
     const [priceOpen, setPriceOpen] = useState(false); // Open/close
     const price = ["Under 99", "Under 149", "Under 199", "Under 249", "Under 349", "Under 499", "500 & Above"]; // List
 
-{/* ---------------------------------- Rating Section------------------------- */}    
+// ---------------------------------- Rating Section------------------------- 
     const [ratingOpen, setRatingOpen] = useState(false); // Open/Close
     const [ratingCategory, setRatingCategory] =useState([]) // Checkbox
     const ratings = ["2.0 and above", "3.0 and above", "3.5 and above", "4.0 and above"]; // list
 
-    const ratingChange =(rating => { // Checkbox function
+    const ratingChange =(rating) => { // Checkbox function
         if (ratingCategory.includes(rating)) {
             setRatingCategory (
                 ratingCategory.filter(item => item !== rating)
@@ -86,7 +86,7 @@ function Products() {
         else {
             setRatingCategory([...ratingCategory, rating]);
         }
-    }) 
+    }
 
 
   return (

@@ -23,22 +23,22 @@ function Header() {
                     
                     {/* Search */}
                     <div className=" relative flex items-center gap-2.5 ml-2.5 md:ml-28 md:gap-10">
-                        <i className="fa-solid fa-magnifying-glass absolute opacity-20 left-1.5 bottom-3.5 text-2xl
+                        <i className="fa-solid fa-magnifying-glass absolute opacity-20 left-3.5 bottom-4 text-lg
                         md:text-3xl md:left-4 md:bottom-5"></i>
 
-                        <div>
+                        <div className=' ml-2'>
                             <input type="text" placeholder="Try Saree, Kurti or Search by Product Code" 
-                            className='  bg-gray-100 rounded-3xl h-12 px-9 py-3 hover:border md:rounded-4xl md:h-15 md:px-14 md:w-xl'/>
+                            className='  bg-gray-100 rounded-3xl w-56 h-12 px-7 hover:border md:rounded-4xl md:h-15 md:px-14 md:w-xl'/>
                         </div>
                         
                         {/* Icon */}
-                        <div className=' flex flex-col items-center mt-4 cursor-pointer '>
-                            <img src={user} className=' w-6 h-5 md:w-8 md:h-7' />
-                            <p className=' font-medium opacity-75 md:text-lg'>Profile</p>
+                        <div className=' flex flex-col items-center mt-4 cursor-pointer'>
+                            <img src={user} className=' w-5 h-4 md:w-8 md:h-7' />
+                            <p className=' font-medium text-sm opacity-75 md:text-lg'>Profile</p>
                         </div>
                         <div className=' flex flex-col items-center mt-4 cursor-pointer'>
-                            <img src={shopping} className=' w-6 h-5 md:w-8 md:h-7' />
-                            <p className=' font-medium opacity-75 md:text-lg'>Cart</p>
+                            <img src={shopping} className=' w-5 h-4 md:w-8 md:h-7' />
+                            <p className=' font-medium text-sm opacity-75 md:text-lg'>Cart</p>
                         </div>
                     </div>
                     
