@@ -25,7 +25,7 @@ function Footer() {
               Cash on Delivery | Free Delivery
             </p>
             {/* Icon */}
-            <div className=" w-40 h-14 flex gap-3 mt-8 ">
+            <div className=" w-36 h-12 flex gap-3 mt-8 ">
               <img src={googleplay} alt="Google Play" className=" cursor-pointer
                hover:transition-transform duration-300 hover:scale-110" />
               <img src={appstore} alt="App Store" className=" cursor-pointer

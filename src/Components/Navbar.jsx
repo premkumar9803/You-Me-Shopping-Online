@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Banner from '../assets/Banner/Banner.png'
 import cod1 from "../assets/Banner/return.png";
 import cod2 from "../assets/Banner/cash-on-delivery.png";
@@ -40,10 +40,36 @@ function Navbar() {
   const [active, setActive] = useState(null);    // active highlight
   const [mobileDrop, setMobileDrop] = useState(null); // mobile dropdown
 
+  // navbar ref (outside click detect panna)
+  const navBox = useRef(null);  
+
+  // Outside click close
+  useEffect (() => {
+    function closeMenu(e) {
+      // menu open illa na return
+      if(!open) return;
+
+      // navbar ku veliya click panna close
+      if(navBox.current && !navBox.current.contains(e.target)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener('click', closeMenu);
+    return () => {
+      document.removeEventListener('click', closeMenu);
+    }
+  }, [open]);
+
+  // Link click close
+  const handleLinkClick = () => {
+    setOpen(false);
+  }
+
   return (
     <div>
       {/* NAVBAR */}
-      <nav className=" bg-[#FCFCFC]">
+      <nav ref={navBox} className=" bg-[#FCFCFC]">
         <div className="max-w-4xl mx-auto">
 
           {/* MOBILE */}
@@ -60,7 +86,7 @@ function Navbar() {
 
             {/* Mobile Dropdown */}
             {open && (
-              <ul className="absolute w-full bg-white shadow-lg transition-all duration-300 cursor-pointer text-sm">
+              <ul className=" w-full bg-white shadow-lg transition-all duration-300 cursor-pointer text-sm">
                 {nav.map((item, index) => (
                   <li key={index} className="border-b">
                     
@@ -80,7 +106,8 @@ function Navbar() {
                       <ul className="bg-orange-50 animate-slideDown">
                         {item.dropdown.map((sub, i) => (
                           <li
-                            key={i}
+                            key={i} 
+                            onClick={handleLinkClick}
                             className="px-6 py-2 text-sm hover:bg-orange-200"
                           >
                             {sub}
@@ -116,6 +143,7 @@ function Navbar() {
                   {item.dropdown.map((sub, i) => (
                     <li
                       key={i}
+                      onClick={handleLinkClick}
                       className="px-4 py-2 hover:bg-red-100 hover:text-red-600"
                     >
                       {sub}

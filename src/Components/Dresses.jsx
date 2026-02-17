@@ -405,7 +405,7 @@ function Dresses() {
       <div className="flex items-center gap-1 mt-2">
         <span className="bg-[#23BB75] text-white text-sm px-1 py-0.5 rounded-md font-bold md:text-lg md:px-2">
           {item.rating}
-          <i className="fa-solid fa-star text-xs ml-1"></i>
+          <i className="fa-solid fa-star text-xs md:ml-0.5"></i>
         </span>
         <span className="text-xs text-gray-500 font-medium">
           {item.reviews}
